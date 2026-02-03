@@ -1,0 +1,69 @@
+create database bankmanagementsystem;
+
+show databases;
+
+use bankmanagementsystem;
+
+CREATE TABLE Signup
+( 
+	Form_no varchar(20),
+    Name varchar(20),
+    Father_name varchar(20),
+    DOB varchar(20),
+    Gender varchar(20),
+    Email varchar(30),
+    Marital_status varchar(20),
+    Address varchar(50),
+    City varchar(20),
+    Pincode varchar(20),
+    State varchar(30)
+);
+//sreligion+"','"+scategory+"','"+sincome+"','"+seducation+"','"+soccupation+"','"+span+"','"+saadhar+"','"+scitizen+"','"+saccount+
+select * from Signup;
+CREATE TABLE Signuptwo
+( 
+	Form_no varchar (20),
+    Religion varchar(20),
+    Catgory varchar(20),
+    Income varchar(20),
+    Education varchar(20),
+    Occupation varchar(20),
+    PAN_No varchar(10),
+    Aadhar_No varchar(12),
+    Senior_citizen varchar(10),
+    Existing_Account varchar(10)	
+);
+
+Select * from signuptwo;
+
+create table signupthree
+(
+	Form_no varchar(20),
+    AccountType varchar(20),
+    CardNumber varchar(50),
+    PIN varchar(10),
+    ServiceRequired varchar(100)  
+);
+
+select * from signupthree;
+ALTER TABLE signupthree MODIFY COLUMN AccountType VARCHAR(20);
+
+delete from signupthree where PIN = 7881000;
+show tables;
+create table login
+(
+	Form_no varchar(20),
+    CardNumber varchar(20),
+    PIN varchar(10)
+    );
+    
+select * from login;
+create table Bank(
+PIN varchar(10),
+date varchar(50),
+type varchar(20),
+amount varchar(20)
+);
+
+select * from bank;
+
